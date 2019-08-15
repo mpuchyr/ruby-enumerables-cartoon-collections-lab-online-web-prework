@@ -18,6 +18,7 @@ def long_planeteer_calls(short_words)
     if word.length > 4
       longer_than_four = true
     end
+  end
     longer_than_four
 end
 
