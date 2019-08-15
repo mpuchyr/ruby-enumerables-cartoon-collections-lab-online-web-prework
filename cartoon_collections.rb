@@ -27,11 +27,9 @@ def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
   contains_cheese = nil
   cheese_types.each do |cheese|
-    ingredients.each do |ingredient|
-      if cheese.downcase == ingredient.downcase
-        contains_cheese = true
-      end
-    end
+    ingredients.includes?(cheese)
+      contains_cheese = cheese
+      break
   end
   contains_cheese
   
