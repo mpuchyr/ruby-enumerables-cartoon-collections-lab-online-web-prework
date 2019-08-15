@@ -25,5 +25,7 @@ end
 def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  ingredients.include?(cheese_types)
+  contains_cheese = false
+  
+  
 end
