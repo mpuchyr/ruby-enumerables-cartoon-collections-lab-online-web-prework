@@ -30,7 +30,9 @@ def find_the_cheese(ingredients)
   while counter < cheese_types.length do
     if ingredients.include?(cheese_types[counter]) == true
       contains_cheese = cheese_types[counter]
+      break
     end
+    counter += 1
   end
   contains_cheese
   
